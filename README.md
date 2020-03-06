@@ -249,7 +249,7 @@ l(t(n(42))) - returns 42
 ```
 
 ### Constrol structures 
-This is a simple definition of an if-then-else function
+This is a simple definition of an if-then-else condition in lua
 ```
 if condition then
     -- if block
