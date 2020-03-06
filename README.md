@@ -424,7 +424,7 @@ Cryengine documentation (very helpful)\
 - https://docs.cryengine.com/display/SDKDOC4/Structure+of+a+Script+Entity
 - https://docs.cryengine.com/display/SDKDOC4/Common+Lua#CommonLua-Vec2Str
 
-Linear algebra - intersection of a line with plane
+Linear algebra - intersection of a line with plane\
 https://rosettacode.org/wiki/Find_the_intersection_of_a_line_with_a_plane#Lua
 
 Modding guide\
