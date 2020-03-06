@@ -72,14 +72,21 @@ line comment ]]
 ### Common Commands
 This list is a short overview of helpful commands provided by the engine.
 
-Logs the given string to the ingame-console:\
-```System.LogAlways("Hello World!")```
+Logs the given string to the ingame-console
+```
+System.LogAlways("Hello World!")
 
-Clear the console output:\
-```System.ClearConsole();```
+userName = "Heinrich"
+System.LogAlways("Hallo " .. userName .. "!")
+```
+
+Clear the console output
+```
+System.ClearConsole();
+```
 
 
-change map to <mapname> \ 
+change map to <mapname>
 ```
 map <mapname>
 ```
@@ -267,10 +274,12 @@ visitCount = 0
 firstVisit = (visitCount > 0) ? "Welcome new user!" : "Hello again!";
 ```
 
-### for loops 
+### loops 
 
 For every member in the player object, print the name of it
-```for key,value in pairs(player) do System.LogAlways(key) end```
+```
+for key,value in pairs(player) do System.LogAlways(key) end
+```
 
 For every entity within the radius of 100, log their keys to the console
 ```
@@ -322,9 +331,7 @@ Create *.ent file in Entities/<nameOfEntile.ent>
 Create *.lua file in Scripts/Entities/<nameOfLuaFile.lua>
 
 
-**Note**\
-Delegate the functionality of the entity into a controller class - \
-this allows the usage of the lua code: ```Script.ReloadScript("Scripts/Entities/<nameOfLuaFile.lua>")```
+Tip: Delegate the functionality of the entity into a controller class - this allows us to use Script.ReloadScript("Scripts/Entities/<nameOfLuaFile.lua>") 
 
 ### Spawning entities
 The following code shows how to spawn an entity at a given position entity.pos and some kind of input (line) for the path of the model / *.cgf file:
