@@ -322,7 +322,9 @@ Create *.ent file in Entities/<nameOfEntile.ent>
 Create *.lua file in Scripts/Entities/<nameOfLuaFile.lua>
 
 
-Tip: Delegate the functionality of the entity into a controller class - this allows us to use Script.ReloadScript("Scripts/Entities/<nameOfLuaFile.lua>") 
+**Note**\
+Delegate the functionality of the entity into a controller class - \
+this allows the usage of the lua code: ```Script.ReloadScript("Scripts/Entities/<nameOfLuaFile.lua>")```
 
 ### Spawning entities
 The following code shows how to spawn an entity at a given position entity.pos and some kind of input (line) for the path of the model / *.cgf file:
