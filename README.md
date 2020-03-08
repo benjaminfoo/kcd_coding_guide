@@ -296,20 +296,22 @@ for i,e in pairs(ents) do
 end
 ```
 
+Delete every instance of "BasicEntity"
+```
+function deleteall ()
+    local ents =  System.GetEntitiesByClass("BasicEntity")
+    for i,e in pairs(ents) do
+        System.RemoveEntity(e.id)
+    end
+end
+```
+
 ### CVars 
 In order to get the height and width provided by the rendering properties
 ```
 screenHeight = tonumber(System.GetCVar("r_height"))
 screenWidth = tonumber(System.GetCVar("r_width"))
 ```
-
-
-## Development mode
-In order to have full access to the console, debugging output and runtime editing of lua files, 
-you have to obtain the KCD-editor and launch the kingdomcomedeliverance.exe from KingdomComeDeliverance/Bin/win64releasedll 
-
-In order to re/load a script which has been added to a mod, call #Script.ReloadScript("Scripts/<lua-file.lua>") in the console.
-In order to reload a script which already has been loaded, call #Script.UnloadScript("Scripts/<lua-file.lua>") in the conosle. 
 
 ## Mocking KCD-API
 see main.lua header
@@ -403,6 +405,12 @@ function object:uiActionListener(actionName, eventName, eventArgs)
 end
 
 UIAction.RegisterActionListener(object, "", "", "uiActionListener")
+```
+
+## Misc.
+Get the total income of pribyslawitz
+```
+NewHomesLuaAPI.GetTotalIncome()
 ```
 
 ## Links / Resources
